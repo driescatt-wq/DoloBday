@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dolo's Birthday Weekend</title>
+<meta name="theme-color" content="#FBF4EA">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Dolo's Weekend">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-512.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Dreamy animated background -->
+<div class="bg" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <span class="blob b3"></span><span class="blob b4"></span>
+  <span class="blob b5"></span>
+  <svg class="lines" viewBox="0 0 400 800" preserveAspectRatio="none">
+    <path d="M-20 520 C 90 430, 160 640, 260 540 S 420 420, 430 470" />
+    <path d="M-20 600 C 120 520, 180 720, 290 610 S 420 520, 430 560" />
+  </svg>
+</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<!-- INTRO -->
+<main id="intro" class="view active">
+  <div class="wrap center">
+    <p class="eyebrow">29 · 30 · 31 October</p>
+    <h1 class="title">Dolo's<br><em>Birthday</em><br>Weekend</h1>
+    <p class="tagline">nothing but good vibes</p>
+
+    <div class="countdown" id="countdown">
+      <div><span id="cd-d">00</span><small>days</small></div>
+      <div><span id="cd-h">00</span><small>hours</small></div>
+      <div><span id="cd-m">00</span><small>minutes</small></div>
+      <div><span id="cd-s">00</span><small>seconds</small></div>
+    </div>
+    <p class="cd-note" id="cd-note">until the weekend begins</p>
+
+    <button id="unlock" class="btn-primary">Unlock the vibes</button>
+  </div>
+</main>
+
+<!-- MENU -->
+<section id="menu" class="view">
+  <div class="wrap center">
+    <p class="eyebrow">Happy birthday</p>
+    <h2 class="title small">Hello, <em>Dolo</em></h2>
+    <p class="tagline">Here's everything you need for our weekend.</p>
+
+    <div class="menu-buttons">
+      <button class="card-btn" data-go="timetable">
+        <span class="num">I</span>
+        <span class="label">Timetable</span>
+        <span class="hint">what we'll do, day by day</span>
+      </button>
+      <button class="card-btn" data-go="practical">
+        <span class="num">II</span>
+        <span class="label">Practicalities</span>
+        <span class="hint">what to bring</span>
+      </button>
+    </div>
+    <p class="cd-note" id="mini-cd"></p>
+  </div>
+</section>
+
+<!-- TIMETABLE -->
+<section id="timetable" class="view">
+  <div class="wrap">
+    <button class="back" data-go="menu">&larr; Back</button>
+    <p class="eyebrow">I</p>
+    <h2 class="title small">Timetable</h2>
+    <div id="days"></div>
+  </div>
+</section>
+
+<!-- PRACTICALITIES -->
+<section id="practical" class="view">
+  <div class="wrap">
+    <button class="back" data-go="menu">&larr; Back</button>
+    <p class="eyebrow">II</p>
+    <h2 class="title small">Practicalities</h2>
+    <p class="intro-text" id="pack-intro"></p>
+    <div id="packing"></div>
+    <p class="sign">Leave the rest to me. &hearts;</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

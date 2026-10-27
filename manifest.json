@@ -1,0 +1,13 @@
+{
+  "name": "Dolo's Birthday Weekend",
+  "short_name": "Dolo's Weekend",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF4EA",
+  "theme_color": "#FBF4EA",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
